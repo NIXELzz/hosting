@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(images/plaçaEsglesia.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 70vh;
+    display: flex;
+    align-items:center-bottom;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.img-logo{
+    max-width: 100px;
+    margin-right: 10px;
+}
+
+.logo {
+    font-size: xx-large;
+    font-weight: 800;
+    color: black;
+    white-space: pre-line;
+    padding-left: 0;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.navbar{
+    display: flex;
+    align-items: flex-end;
+}
+
+.menu .navbar ul li a {
+    color: black;
+    font-size: large;
+    font-weight: 600;
+
+    padding: 20px;
+    display: block;
+}
+.menu .navbar ul li a:hover {
+    color:rgb(110, 160, 144);
+}
+#menu{
+    display: none;
+}
+.menu label{
+    display: none;
+    cursor:pointer;
+}
+.menu-icon{
+    width: 25px;
+}
+
+.image-logo{
+    display: flex;
+    align-items: center;
+}
+
+.header-content{
+    text-align: center;
+    line-height: 35vh;
+}
+
+.header-content h1{
+    text-transform: uppercase;
+    font-size: 60px;
+    color:rgb(110, 160, 144);
+    margin-bottom: 20px;
+}
+
+.header-content p{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+.header-content a{
+    color:rgb(54, 78, 71);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.header-content a:hover{
+    color:rgb(160, 255, 226);
+}
+
+.noticies{
+    padding: 20px 0;
+    background-color:rgb(238, 235, 230);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.noticies-content{
+    text-align: center;
+}
+.noticies-content h2{
+    font-size: xx-large;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.noticies-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.noticia-1{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.noticia-1 img{
+    width: 200px;
+}
+.noticia-2{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.noticia-3{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.text-p{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.general{
+    display:flex;
+    background-color:rgb(238, 235, 230);
+}
+
+.general-1{
+    width: 70%;
+    padding: 100px 250px 100px 100px;
+    margin-bottom: 20px;
+}
+
+.general-1 ul li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: large;
+    font-weight: 500;
+}
+.general-1 p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: large;
+}
+
+.general-1 h3{
+    font-size: large;
+    font-weight: 500;
+}
+
+.general-2{
+    background-image: url(images/logoPastoretsNoticia.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+    margin-bottom: 20px;
+}
+.general-3{
+    background-image: url(images/teatreSantMartiNoticia.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+}
+
+.general-4{
+    background-image: url(images/SetmanaGentGranNoticia.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+}
+
+.btn-2{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 25px;
+    background-color:rgb(110, 160, 144);
+    color: white;
+}
+
+.btn-2:hover{
+    background-color:rgb(137, 199, 180);
+}
+
+.footer {
+    padding: 40px 0;
+    background-color:rgb(110, 160, 144);
+    max-height: fit-content;
+}
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.links, .creador{
+    flex: 1;
+    margin-right: 20px;
+}
+.links h3 , .creador h3,.footer-aside h3{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.links a , .creador a{
+    color: white;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-aside.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-aside img{
+    width: 100%;
+    max-width: 250px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+/* GALERIA I SLIDER */
+.container-images{
+    padding: 2rem;
+}
+
+.slider-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.slider-wrapper{
+    position: relative;
+    margin: 0 auto;
+    max-width: 48rem;
+}
+
+.slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem rgba(0, 0, 0, 0.25);
+}
+
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.5;
+    transition: opacity ease 250ms;
+}
+.slider-nav a:hover{
+    opacity: 1;
+}
+
+/* CONTINGUT I INFO */
+
+.info-container{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    background-color: rgb(238, 235, 230);
+}
+
+.info-container h2{
+    background-color:rgb(137, 199, 180);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.info-container p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.info-container1{
+    background-color: rgb(238, 235, 230);
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.info-container1 img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:991px){
+    .menu{
+        padding: 30px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top:100%;
+        left: 0;
+        right: 0;
+        background-color:rgb(137, 199, 180);
+        display: none;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+    }
+    .header-content{
+        padding: 100px 30px;
+    }
+    .header-content p{
+        padding: 0;
+    }
+}
