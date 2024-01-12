@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Ametlla de Merola</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu container">
+            <div class="image-logo">
+                <img class="img-logo" src="images/image.png">
+                <a href="index.html" class="logo">L'AMETLLA<br>DE MEROLA</a>
+                <input type="checkbox" id="menu" />
+                <label for="menu">
+                    <img src="images/menu.png" class="menu-icon" alt="">
+                </label>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inici</a></li>
+                    <li><a href="content.html">Informació</a></li>
+                    <li><a href="#">Tradicions</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="https://app.weathercloud.net/d9223526640#profile">MeteoMerola</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <h1> Utilitats </h1>
+        </div>
+    </header>
+
+    <section class="general container">
+        <div class="half-width weather">
+            <h2> Meteomerola</h2>
+            <iframe src="https://app.weathercloud.net/d9223526640#current" width="100%" height="750" frameborder="0"
+                allowfullscreen="allowfullscreen"></iframe>
+        </div>
+        <div class="half-width">
+            <h2>Calendari</h2>
+            <div class="calendar">
+                <header>
+                    <h3></h3>
+                    <nav>
+                        <button id="prev"></button>
+                        <button id="next"></button>
+                    </nav>
+                </header>
+                <section>
+                    <ul class="days" id="datesList">
+                        <li>Dll</li>
+                        <li>Dt</li>
+                        <li>Dm</li>
+                        <li>Dj</li>
+                        <li>Dv</li>
+                        <li>Ds</li>
+                        <li>Dg</li>
+                    </ul>
+                    <ul class="dates"></ul>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="links">
+                <h3> L'Ametlla de Merola</h3>
+                <ul>
+                    <li><a href="#">Contacte</a></li>
+                    <li><a href="#">Associació Cultural Esplai</a></li>
+                    <li><a href="#">Associació de veïns</a></li>
+                    <li><a href="#">Cross</a></li>
+                    <li><a href="#">Gegants</a></li>
+                </ul>
+            </div>
+            <div class="creador">
+                <h3> Roger Boixadera Vall</h3>
+                <ul>
+                    <li><a href="#">roger.boixadera@uvic.cat</a></li>
+                    <li><a href="#">Uvic 2023</a></li>
+                    <li><a href="#">Lenguatges Web</a></li>
+                </ul>
+            </div>
+            <aside>
+                <div class="footer-aside container">
+                    <h3> Amb el suport de: </h3>
+                    <img src="images/ajuntamentPuigreigLogo.png">
+                    <img src="images/logo-uvic-500x300px.png">
+                </div>
+            </aside>
+        </div>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+
+</html>

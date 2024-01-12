@@ -264,6 +264,11 @@ body {
     margin-right: 20px;
 }
 
+#map{
+    width: 560px;
+    height: 315px;
+}
+
 /* GALERIA I SLIDER */
 .container-images{
     padding: 2rem;
@@ -358,6 +363,120 @@ body {
    object-fit: cover;
 }
 
+.half-width{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.half-width h2{
+    text-align: center;
+    margin: 10px;
+}
+
+/* CALENDARI */
+
+.half-width h3{
+    font-weight: 600;
+}
+
+.calendar{
+    margin: auto;
+    padding: 1rem;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+}
+.calendar header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.calendar ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.calendar ul li{
+    width: calc(100% / 7);
+    margin-top: 25px;
+    position: relative;
+    z-index: 2;
+}
+
+#prev,#next{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+#prev::before, #next::before{
+    content: '';
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-style: solid;
+    border-width: 0.25em 0.25em 0 0;
+    border-color: lightgray;
+}
+#next::before{
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+#prev::before{
+    transform: translate(-50%,-50%) rotate(-135deg);
+}
+#next:hover::before, #prev:hover::before{
+    border-color: black;
+}
+.days{
+    font-weight: 600;
+}
+.dates li.today{
+    color: white;
+}
+.dates li.today::before{
+    content: '';
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:rgb(110, 160, 144);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.dates li.inactive {
+    color:lightgray;
+}
+
+.has-activity{
+    position: relative;
+}
+
+.activity-indicator{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background-color: lightcoral;
+    border-radius: 50%;
+    display: none;
+}
+
+.has-activity:hover .activity-indicator{
+    display: block;
+}
+
 /* RESPONSIVE */
 
 @media(max-width:991px){
@@ -392,5 +511,8 @@ body {
     }
     .header-content p{
         padding: 0;
+    }
+    .half-width{
+        width: 100%;
     }
 }

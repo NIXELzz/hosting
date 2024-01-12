@@ -12,7 +12,7 @@
     <header class="header">
         <div class="menu container">
             <div class="image-logo">
-                <img  class="img-logo" src="images/image.png">
+                <img class="img-logo" src="images/image.png">
                 <a href="index.html" class="logo">L'AMETLLA<br>DE MEROLA</a>
                 <input type="checkbox" id="menu" />
                 <label for="menu">
@@ -70,7 +70,7 @@
                 Funció de teatre Clau per a dos al teatre de l’Ametlla de Merola.
                 Dins dels actes de la Fira de Sant Martí de Puig-reig.
 
-                <h3>Diumenge dia 12 -- 19 hores</h3>
+            <h3>Diumenge dia 12 -- 19 hores</h3>
             </p>
             <a href="#" class="btn-2">Comprar Entrades</a>
         </div>
@@ -90,20 +90,19 @@
             <h2> Utilitats</h2>
             <div class="noticies-group">
                 <div class="noticia-1">
-                    <h3 class="text-p">Calendari</h3>
-                    <img src="images/calendariAmetlla.png">
-                </div>
-                <div class="noticia-2">
-                    <h3 class="text-p">MeteoMerola</h3>
-                    <img src="images/meteomerola.png">
+                    <h3 class="text-p">Youtube</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/fRRYx8OczGk?si=8ts3Edst4UYRFPRi"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
                 <div class="noticia-3">
-                    <h3 class="text-p">Youtube</h3>
-                    <img src="images/youtubeAmetlla.png">
+                    <h3 class="text-p">Ubicació</h3>
+                    <div id="map"></div>
                 </div>
             </div>
             <div class="utilitats-btn">
-                <a href="#" class="btn-2">Més Utilitats</a>
+                <a href="utilitats.html" class="btn-2">Més Utilitats</a>
             </div>
         </div>
     </main>
@@ -136,6 +135,9 @@
             </aside>
         </div>
     </footer>
+    <script src="script.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
 </body>
 
 </html>
